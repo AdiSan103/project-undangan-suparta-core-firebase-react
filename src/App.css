@@ -1,0 +1,345 @@
+
+/* numans */
+.numans {
+  font-family: 'Numans', sans-serif;
+}
+
+/* playball */
+.playball {
+  font-family: 'Playball', cursive;
+}
+
+/* montserrat */
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* nunito sans */
+.nunitosans {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/* dancingscript */
+.dancingscript {
+  font-family: 'Dancing Script', cursive;
+}
+
+/* alexbrush */
+.alexbrush {
+  font-family: 'Alex Brush', cursive;
+}
+
+/* playfairdisplay  */
+.playfairdisplay {
+  font-family: 'Playfair Display', serif;
+}
+
+/* passionone */
+.passionone {
+  font-family: 'Passion One', cursive;
+}
+
+.color1 {
+  color: rgb(115, 78, 33);
+}
+.bg-1 {
+  background: rgba(209, 184, 122, 0.538);
+}
+/* laoding */
+body {
+  overflow-x: hidden;
+
+}
+.vh-100-2 {
+  min-height: 100vh;
+}
+.d-hidden {
+  position: fixed;
+}
+
+/* .img-loading-desc {
+  max-width: 150px;
+} */
+.loadingIcon2 {
+  background: url('assets/img/img7.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  z-index: 9999;
+}
+.loadingIcon2.true {
+  transition: 1.25s;
+  transform: translateY(-100%);
+}
+.bg-loadingIcon2  {
+  background: rgba(37, 37, 36, 0.288)
+}
+.desc-text {
+  z-index: 999;
+}
+.buttonClick {
+  cursor: pointer;
+  transition: 0.25s;
+  background-color: rgb(54, 53, 53);
+  font-size: 25px;
+  color: white;
+  font-size: 15px;
+}
+.buttonClick:hover {
+  background-color: rgb(255, 255, 255);
+  color: black!important;
+}
+img.img-loading-top {
+  margin-top: -500px;
+}
+img.img-loading-top-2 {
+  margin-top: -600px;
+}
+
+button.buttonClick:focus {
+  transform: scale(0.95);
+}
+
+/* timer */
+.timer .img-border-top,
+.timer .img-border-bottom{
+  max-width: 500px;
+  margin: 0 auto;
+}
+.timer-part {
+  width: 75px;
+  background: rgb(201, 189, 152);
+  border-radius: 15px;
+}
+.timer-bottom {
+  bottom: 0;
+  left: 0;
+}
+
+/* audio-control */
+.audio-control {
+  height: 50px;
+  width: 50px;
+  background: rgb(209, 184, 122);
+  right: 10px;
+  bottom: 10px;
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.25s;
+  border: none;
+}
+.audio-control:hover{
+  transform: scale(0.9);
+  background: rgba(209, 184, 122, 0.54);
+}
+.audio-control svg {
+  font-size: 25px;
+  margin-left: 2px;
+  color: white;
+}
+
+/* banner */
+.banner  {
+  background: url('assets/img/img9.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner-container {
+  background: rgba(99, 99, 99, 0.267);
+}
+.banner h1,
+.banner .p-1 {
+  text-shadow: 1px 1px  rgba(0, 0, 0, 0.945);
+}
+.banner .p-2 {
+  background: rgb(209, 184, 122);
+  width: 200px;
+}
+.banner-bottom {
+  bottom: 0;
+}
+
+/* content1 */
+.content1-content {
+  max-width: 600px;
+}
+
+/* content2 */
+.content2 {
+  overflow-x: hidden;
+}
+.content2-main {
+  max-width: 600px;
+}
+.img-content2-1 {
+  background: url('assets/img/img7.jpg');
+  max-width: 400px;
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.img-content2-2 {
+  background: url('assets/img/img9.jpg');
+  max-width: 400px;
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.img-content2-1:hover,
+.img-content2-2:hover {
+  transform: scale(1.03);
+}
+.content2-1-border {
+  width: 700px;
+  height: 400px;
+  background: rgb(209, 184, 122);
+  bottom: 50px;
+  z-index: -1;
+}
+
+.content2-2-border {
+  width: 600px;
+  height: 400px;
+  background: rgb(209, 184, 122);
+  bottom: 50px;
+  left: -10px;
+  z-index: -1;
+}
+
+/* content3 */
+.content3-bg {
+  background: linear-gradient(white,rgba(255, 255, 255, 0), white);
+  height: 100%;
+  width: 100%;
+}
+.content3 {
+  background: url('assets/img/img2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  background-attachment: fixed;
+}
+.content-3-desc {
+  max-width: 600px;
+  background:   white;
+  border-radius: 20px;
+  box-shadow: 0 0 18px 9px  rgba(209, 184, 122, 0.133);
+}
+.border-content3-desc {
+  background: rgba(209, 184, 122, 0.368);
+  box-shadow: 0 0 18px 9px  rgba(209, 184, 122, 0.538);
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+}
+.buttonMaps {
+  background: rgb(209, 184, 122);
+}
+/* gallery */
+.gallery  {
+  max-width: 800px;
+}
+.gallery-container {
+  background: rgba(209, 184, 122, 0.538);
+}
+.gallery-container h2 {
+  z-index: 9;
+}
+
+/* video */
+.video iframe {
+  min-width: 300px;
+}
+@media(min-width: 400px) {
+  .video iframe {
+      min-width: 400px;
+  }
+}
+@media(min-width: 700px) {
+  .video iframe {
+      min-width: 600px;
+  }
+}
+
+/* content5 */
+/* .content5-main-content {
+  max-width: 800px;
+}
+
+.content5-main-content  .col .icon-svg{
+  background: #d3146d94;
+  border-radius: 50%;
+  padding: 25px;
+} */
+
+/* content6 */
+.content6 {
+  background: linear-gradient(rgba(209, 184, 122, 0.538),rgba(209, 184, 122, 0));
+}
+
+/* comentar */
+.comentar {
+  background: rgba(209, 184, 122, 0.538);
+}
+
+.comentar-part,
+.comentar-part .border:hover {
+  transition: 0.2s;
+}
+.comentar-part:hover {
+  transform: scale(1.01);
+}
+.comentar-part .border:hover {
+  background-color: rgba(255, 251, 169, 0.503);
+}
+
+.comentar-part span {
+  line-height: 0;
+}
+
+.comentar-part .name {
+  font-size: 12px;
+  margin-top: -10px;
+  margin-left: 10px;
+}
+
+.comentar-part .date {
+  font-size: 8px;
+  margin-top: -15px;
+  margin-left: 10px;
+}
+
+.comentar-part .border {
+  cursor: pointer;
+  border: white 2px solid!important;
+  border-radius: 10px;
+  padding: 26px 10px 0px 10px;
+  background-color: rgba(255, 251, 169, 0.221);
+}
+
+.comentars {
+  overflow: auto;
+  white-space: nowrap;
+  max-height: 450px;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+}
+
+.comentar label {
+  font-size: 12px;
+}
