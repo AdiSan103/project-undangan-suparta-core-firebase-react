@@ -10,6 +10,7 @@ function App() {
   const [comments, setComments] = useState([]);
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
+  const [visitor, setVisitor] = useState("");
 
   const OpenLetter = () => {
     // variabel
@@ -89,6 +90,11 @@ function App() {
     return `${day}-${month}-${year}`;
   };
 
+  const getVisitor = () => {
+    let url = new URLSearchParams(window.location.search);
+    setVisitor(url.get("untuk"));
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -114,7 +120,9 @@ function App() {
   useEffect(() => {
     Aos.init();
     // atur waktu, format ('tahun,bulan,hari')
-    timer("2024,06,29");
+    timer("2024,06,21");
+    //
+    getVisitor();
   });
 
   useEffect(() => {
@@ -128,6 +136,7 @@ function App() {
     });
     return () => unsub();
   });
+
   return (
     <div>
       {/* <!-- loading --> */}
@@ -139,20 +148,25 @@ function App() {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              Undangan Pernikahan
+              Undangan Manusa Yadnya
+              <br />
+              Mepandes / Potong Gigi
             </h4>
             <h2
-              className="display-1 playball"
+              className="display-6 dancingscript"
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              Wawan & Chandra
+              I Gusti Agung Ngurah Wighnastana Prayoga
+              <br />
+              I Gusti Agung Ayu Ratih Mahyuni
+              <br />I Gusti Agung Inten Kesaraningrat
             </h2>
-            {/* <!-- <img src="/src/assets/img/asset5.png" alt="..." className="w-100 img-loading-desc"> --> */}
+            {/* <!-- <img src="src/assets/img/asset5.png" alt="..." className="w-100 img-loading-desc"> --> */}
             <p className="mt-5 " data-aos="fade-up" data-aos-duration="1000">
               Kpd. Bpk/Ibu/Saudara/i
             </p>
-            <h3 className="montserrat">I Putu Adi Santika Jaya</h3>
+            <h3 className="montserrat">{visitor}</h3>
             <p className=" mx-4">
               Tanpa Mengurangi rasa hormat, kami mengundang anda untuk hadir
               pada acara pernikahan kami.
@@ -210,7 +224,7 @@ function App() {
       {/* <!-- audio --> */}
       <div className="fixed-bottom audio shadow">
         <audio
-          src="/src/assets/music/BALI_WORLD_MUSIC_GUS_TEJA_FEE_WITH_LOVE.mp3"
+          src="src/assets/music/BALI_WORLD_MUSIC_GUS_TEJA_FEE_WITH_LOVE.mp3"
           id="audio"
           loop
           className="play"
@@ -229,15 +243,41 @@ function App() {
         {/* <!-- banner --> */}
         <div className="banner">
           <div className="banner-container  w-100 vh-100-2 d-flex flex-column text-center justify-content-center text-white align-items-center">
-            <p className="numans p-1">We are getting married</p>
+            <p className="numans p-1">
+              Undangan Manusa Yadnya
+              <br />
+              Mepandes / Potong Gigi
+            </p>
             <h1
-              className="alexbrush display-1"
+              className="dancingscript display-7"
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              Wawan <span className="playball">&</span> Chandra
+              I Gusti Agung Ngurah Wighnastana Prayoga
+              <br />
+              I Gusti Agung Ayu Ratih Mahyuni
+              <br />I Gusti Agung Inten Kesaraningrat
             </h1>
-            <p className="nunitosans p-2">20 November 2021</p>
+            <br />
+            <div className="numans ">
+              <p>Putra - Putri Pasangan :</p>
+              <div className="d-flex w-full gap-5">
+                <div>
+                  <span>I Gusti Ngurah Gede Eka Mahaputra, SH</span>
+                  <br />
+                  <span>&</span>
+                  <br />
+                  <span>I Dewa Ayu Nyoman Wahyuni, SE</span>
+                </div>
+                <div>
+                  <span>I Gusti Agung Ngurah Alit Jelada Putra, SE</span>
+                  <br />
+                  <span>&</span>
+                  <br />
+                  <span>I Gusti Ayu Agung Ratini</span>
+                </div>
+              </div>
+            </div>
             {/* <!-- bottom --> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -266,8 +306,8 @@ function App() {
             <p className="numans" data-aos="fade-up" data-aos-duration="1000">
               {" "}
               Hyang Widhi Wasa/Tuhan Yang Maha Esa kami bermaksud mengundang
-              Bapak/Ibu/Saudara/i pada Upacara Manusa Yadnya Pawiwahan
-              (Pernikahan) Putra dan Putri kami.
+              Bapak/Ibu/Saudara/i pada Upacara Manusa Yadnya Mepandes ( Potong
+              Gigi ) Putra dan Putri kami.
             </p>
           </div>
         </div>
@@ -283,11 +323,16 @@ function App() {
               data-aos-duration="1000"
             >
               <div>
-                <h3 className="playball display-3 mt-3 ">Wawan</h3>
-                <h3 className="alexbrush fw-bold">Bli Wawan</h3>
-                <i className="nunitosans">Putra Pertama dari pasangan</i>
-                <p className="montserrat fw-bold my-3">Parents name</p>
-                <p className="nunitosans">Denpasar Timur, Denpasar, Bali</p>
+                <h3 className="alexbrush fw-bold">Jumat, 21 Juni 2024</h3>
+                <i className="nunitosans">Hari /Tanggal</i>
+                <p className="montserrat fw-bold my-3">-- : -- Wita</p>
+                <p className="nunitosans">Waktu</p>
+                <i className="montserrat fw-bold my-3">
+                  Jl. Subita Gg Sudamala No. 7,
+                  <br />
+                  Br Abiankapas Kaja, Sumerta,Denpasar.
+                </i>
+                <p className="nunitosans mt-3">Tempat</p>
               </div>
             </div>
             {/* <!--  --> */}
@@ -318,11 +363,17 @@ function App() {
               data-aos-duration="1000"
             >
               <div>
-                <h3 className="playball display-3 mt-3 ">Chandra</h3>
-                <h3 className="alexbrush fw-bold">Mbok Gek Chandra</h3>
-                <i className="nunitosans">Putri kedua dari pasangan</i>
-                <p className="montserrat fw-bold my-3">Parents name</p>
-                <p className="nunitosans">Denpasar Timur, Denpasar, Bali</p>
+                <h3 className="playball display-3 mt-3 ">Mapandes</h3>
+                <h3 className="alexbrush fw-bold">Upacara Potong Gigi</h3>
+                <p className="montserrat fw-bold my-3">
+                  I Gusti Agung Ayu Ratih Mahyuni
+                </p>
+                <p className="montserrat fw-bold my-3">
+                  I Gusti Agung Ayu Ratih Mahyuni
+                </p>
+                <p className="montserrat fw-bold my-3">
+                  I Gusti Agung Inten Kesaraningrat
+                </p>
               </div>
             </div>
           </div>
@@ -351,24 +402,61 @@ function App() {
                   data-aos="fade-up"
                   data-aos-duration="1200"
                 >
-                  <h2 className="playball display-2 pt-sm-5 color1 ">
-                    Pawiwahan
-                  </h2>
-                  <h4 className="nunitosans fw-bolder">
-                    Sabtu, 22 Desember 2021
-                  </h4>
-                  <h4 className="nunitosans fw-bolder">14.00 Wita - Selesai</h4>
-                  <p className="nunitosans fw-bolder">bertempat di</p>
-                  <h4 className="nunitosans fw-bolder">
-                    Jalan Kenangan, Denpasar Timur, Denpasar, Bali
-                  </h4>
-                  <a
-                    href="https://goo.gl/maps/vBntYFo9xctFLTiD6"
-                    className="buttonMaps btn mt-3 fw-bolder nunitosans  text-center text-white"
-                    target="_blank"
+                  <h2 className="playball pt-2 pb-3 color1 ">Om Swastiastu</h2>
+                  <p
+                    className="numans"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
                   >
-                    Lokasi Google Maps
-                  </a>
+                    Atas Asung Kertha Wara Nugraha Ida Sang Hyang Widhi Wasa /
+                    Tuhan Yang Maha Esa, kami bermaksud menyelenggarakan Upacara
+                    Manusa Yadnya Mapandes ( Potong Gigi ) putra - putri kami,
+                    yang diselenggarakan pada
+                  </p>
+                  <div className="numans pb-4 pt-2">
+                    <div className="d-flex">
+                      <div className="w-custom1">Hari /Tanggal : </div>
+                      <div className="w-custom2"> Jumat, 21 Juni 2024</div>
+                    </div>
+                    <div className="d-flex">
+                      <div className="w-custom1">Waktu : </div>
+                      <div className="w-custom2"> -- : -- Wita</div>
+                    </div>
+                    <div className="d-flex">
+                      <div className="w-custom1">Tempat : </div>
+                      <div className="w-custom2">
+                        Jl. Subita Gg Sudamala No. 7, Br Abiankapas Kaja,
+                        Sumerta, Denpasar.
+                      </div>
+                    </div>
+                    <a
+                      href="https://maps.app.goo.gl/LNa8vkgieEJtEV3h9"
+                      className="buttonMaps btn mt-3 fw-bolder nunitosans  text-center text-white"
+                      target="_blank"
+                    >
+                      Lokasi Google Maps
+                    </a>
+                  </div>
+                  <p
+                    className="numans"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                  >
+                    Akan merupakan suatu kehormatan dan kebahagiaan bagi kami
+                    apabila Bapak/Ibu/Saudara/i , berkenan hadir untuk
+                    memberikan doa restu. Akan kehadiran & doa restunya, kami
+                    sekeluarga mengucapkan terima kasih.
+                  </p>
+                  <h2 className="playball pt-2 pb-4 color1 ">
+                    Om Shanti, Shanti, Shanti Om
+                  </h2>
+                  <div className="w-custom3 d-flex align-items-end justify-content-end">
+                    <div className="d-flex flex-column align-items-start justify-content-start">
+                      <span>Hormat Kami,</span>
+                      <span> Kel. I Gusti Ngurah Gede Eka Mahaputra, SH</span>
+                      <span> Kel. I Gusti Ngurah Ahil Jelada Putra, SE</span>
+                    </div>
+                  </div>
                 </div>
                 <div className="border-content3-desc position-absolute"> </div>
               </div>
@@ -377,7 +465,7 @@ function App() {
         </div>
 
         {/* <!-- content5 --> */}
-        <div className="content5 vh-100-2 text-center py-5 spaceMono d-flex justify-content-center align-items-center content2-content">
+        {/* <div className="content5 vh-100-2 text-center py-5 spaceMono d-flex justify-content-center align-items-center content2-content">
           <div className="content2-main m-3 p-3 container">
             <div className="content2-1  dancingscript">
               <h4
@@ -401,7 +489,7 @@ function App() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* <!-- gallery --> */}
         <div className="gallery-container vh-100-2 ">
@@ -464,21 +552,21 @@ function App() {
                 <div className="carousel-inner">
                   <div className="carousel-item active">
                     <img
-                      src="/src/assets/img/img2.jpg"
+                      src="src/assets/img/img2.jpg"
                       className="d-block w-100"
                       alt="..."
                     />
                   </div>
                   <div className="carousel-item">
                     <img
-                      src="/src/assets/img/img1.jpg"
+                      src="src/assets/img/img1.jpg"
                       className="d-block w-100"
                       alt="..."
                     />
                   </div>
                   <div className="carousel-item">
                     <img
-                      src="/src/assets/img/img6.jpg"
+                      src="src/assets/img/img6.jpg"
                       className="d-block w-100"
                       alt="..."
                     />

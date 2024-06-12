@@ -75,7 +75,7 @@ body {
   transform: translateY(-100%);
 }
 .bg-loadingIcon2  {
-  background: rgba(37, 37, 36, 0.288)
+  background: rgba(0, 0, 0, 0.57)
 }
 .desc-text {
   z-index: 999;
@@ -150,7 +150,7 @@ button.buttonClick:focus {
   background-repeat: no-repeat;
 }
 .banner-container {
-  background: rgba(99, 99, 99, 0.267);
+  background: rgba(0, 0, 0, 0.541);
 }
 .banner h1,
 .banner .p-1 {
@@ -342,4 +342,24 @@ button.buttonClick:focus {
 
 .comentar label {
   font-size: 12px;
+}
+
+/* custom class */
+.w-custom1 { 
+  width: 200px;
+  text-align: end;
+}
+
+.w-custom2 {
+  width: 100%;
+  text-align: start;
+  padding: 0 5px;
+}
+
+.w-custom3 {
+  width: 100%;
+}
+
+.w-full {
+  width: 100%;
 }
