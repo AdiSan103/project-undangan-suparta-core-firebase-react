@@ -61,7 +61,7 @@ body {
   max-width: 150px;
 } */
 .loadingIcon2 {
-  background: url('assets/img/img7.jpg');
+  background: url('assets/img/u1.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -144,7 +144,7 @@ button.buttonClick:focus {
 
 /* banner */
 .banner  {
-  background: url('assets/img/img9.jpg');
+  background: url('assets/img/u2.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -177,7 +177,7 @@ button.buttonClick:focus {
   max-width: 600px;
 }
 .img-content2-1 {
-  background: url('assets/img/img7.jpg');
+  background: url('assets/img/u3.jpg');
   max-width: 400px;
   height: 500px;
   width: 100%;
@@ -189,7 +189,7 @@ button.buttonClick:focus {
 }
 
 .img-content2-2 {
-  background: url('assets/img/img9.jpg');
+  background: url('assets/img/u4.jpg');
   max-width: 400px;
   height: 500px;
   width: 100%;
@@ -227,12 +227,11 @@ button.buttonClick:focus {
   width: 100%;
 }
 .content3 {
-  background: url('assets/img/img2.jpg');
+  background: url('assets/img/u5.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: 44%;
   background-repeat: no-repeat;
-  height: 350px;
-  background-attachment: fixed;
+  height: 500px;
 }
 .content-3-desc {
   max-width: 600px;
@@ -362,4 +361,8 @@ button.buttonClick:focus {
 
 .w-full {
   width: 100%;
+}
+
+.display-7 {
+  font-size: 22px;
 }

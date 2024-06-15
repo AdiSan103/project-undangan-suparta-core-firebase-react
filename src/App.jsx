@@ -143,17 +143,17 @@ function App() {
       <div className="loadingIcon2 position-absolute vh-100 w-100 start">
         <div className="bg-loadingIcon2 start vh-100 w-100 d-flex justify-content-center align-items-center">
           <div className="desc-text text-center text-white numans">
-            <h4
-              className="p1 montserrat"
+            <p
+              className="montserrat"
               data-aos="fade-up"
               data-aos-duration="1000"
             >
               Undangan Manusa Yadnya
               <br />
               Mepandes / Potong Gigi
-            </h4>
+            </p>
             <h2
-              className="display-6 dancingscript"
+              className="display-7 dancingscript"
               data-aos="fade-up"
               data-aos-duration="1000"
             >
@@ -261,7 +261,7 @@ function App() {
             <br />
             <div className="numans ">
               <p>Putra - Putri Pasangan :</p>
-              <div className="d-flex w-full gap-5">
+              <div className="d-flex w-full gap-lg-5 gap-2">
                 <div>
                   <span>I Gusti Ngurah Gede Eka Mahaputra, SH</span>
                   <br />
@@ -552,21 +552,21 @@ function App() {
                 <div className="carousel-inner">
                   <div className="carousel-item active">
                     <img
-                      src="src/assets/img/img2.jpg"
+                      src="src/assets/img/g1.jpg"
                       className="d-block w-100"
                       alt="..."
                     />
                   </div>
                   <div className="carousel-item">
                     <img
-                      src="src/assets/img/img1.jpg"
+                      src="src/assets/img/g2.jpg"
                       className="d-block w-100"
                       alt="..."
                     />
                   </div>
                   <div className="carousel-item">
                     <img
-                      src="src/assets/img/img6.jpg"
+                      src="src/assets/img/g3.jpg"
                       className="d-block w-100"
                       alt="..."
                     />
@@ -596,30 +596,6 @@ function App() {
                   ></span>
                   <span className="visually-hidden">Next</span>
                 </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* <!-- video --> */}
-        <div className="video bg-1">
-          <div className="d-flex justify-content-center container py-5 vh-100-2">
-            <div>
-              <h2 className=" text-center mb-3 dancingscript display-1 color1">
-                Cerita Kami
-              </h2>
-              <div className="video-content position-relative d-flex m-auto">
-                <div className="video-main m-auto shadow p-2">
-                  <iframe
-                    width="100%"
-                    height="315"
-                    src="https://www.youtube.com/embed/sQD-R3wvF9c?si=2npo3TJRHKzP851P"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                  ></iframe>
-                </div>
               </div>
             </div>
           </div>
