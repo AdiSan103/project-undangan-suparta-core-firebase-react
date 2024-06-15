@@ -5,6 +5,9 @@ import { db } from "./service/firebase.js";
 import { collection, addDoc, query, onSnapshot } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import Comentar from "./components/comentar";
+import imgBg1 from "./assets/img/g1.jpg";
+import imgBg2 from "./assets/img/g2.jpg";
+import imgBg3 from "./assets/img/g3.jpg";
 
 function App() {
   const [comments, setComments] = useState([]);
@@ -551,25 +554,13 @@ function App() {
                 </div>
                 <div className="carousel-inner">
                   <div className="carousel-item active">
-                    <img
-                      src="/src/assets/img/g1.jpg"
-                      className="d-block w-100"
-                      alt="..."
-                    />
+                    <img src={imgBg1} className="d-block w-100" alt="..." />
                   </div>
                   <div className="carousel-item">
-                    <img
-                      src="/src/assets/img/g2.jpg"
-                      className="d-block w-100"
-                      alt="..."
-                    />
+                    <img src={imgBg2} className="d-block w-100" alt="..." />
                   </div>
                   <div className="carousel-item">
-                    <img
-                      src="/src/assets/img/g3.jpg"
-                      className="d-block w-100"
-                      alt="..."
-                    />
+                    <img src={imgBg3} className="d-block w-100" alt="..." />
                   </div>
                 </div>
                 <button
