@@ -230,15 +230,15 @@ function App() {
           src="src/assets/music/BALI_WORLD_MUSIC_GUS_TEJA_FEE_WITH_LOVE.mp3"
           id="audio"
           loop
-          className="play"
+          className="play hidden"
         ></audio>
-        <button
+        {/* <button
           onClick={audio}
           type="button"
           className="audio-button audio-control m-2 d-flex justify-content-center align-items-center"
         >
           <i className="fas fa-volume-mute"></i>
-        </button>
+        </button> */}
       </div>
 
       {/* <!-- body --> */}
@@ -321,14 +321,16 @@ function App() {
           <div className="content2-1 d-flex flex-md-row flex-column-reverse py-2">
             {/* <!--  --> */}
             <div
-              className="col-md-6 d-flex flex-column justify-content-center align-items-center"
+              className="col-md-7 d-flex flex-column justify-content-center align-items-center"
               data-aos="fade-up"
               data-aos-duration="1000"
             >
               <div>
                 <h3 className="alexbrush fw-bold">Jumat, 21 Juni 2024</h3>
                 <i className="nunitosans">Hari /Tanggal</i>
-                <p className="montserrat fw-bold my-3">-- : -- Wita</p>
+                <p className="montserrat fw-bold my-3">
+                  11 : 00 Wita - Selesai
+                </p>
                 <p className="nunitosans">Waktu</p>
                 <i className="montserrat fw-bold my-3">
                   Jl. Subita Gg Sudamala No. 7,
@@ -339,7 +341,7 @@ function App() {
               </div>
             </div>
             {/* <!--  --> */}
-            <div className="col-md-6 d-flex flex-column justify-content-center align-items-center position-relative">
+            <div className="col-md-5 d-flex flex-column justify-content-center align-items-center position-relative">
               <div className="position-absolute content2-1-border"></div>
               <div
                 className="img-content2-1 mx-4"
@@ -351,7 +353,7 @@ function App() {
           {/* <!-- wanita --> */}
           <div className=" content2-2 row py-2">
             {/* <!--  --> */}
-            <div className="col-md-6 d-flex flex-column justify-content-center align-items-center position-relative">
+            <div className="col-md-5 d-flex flex-column justify-content-center align-items-center position-relative">
               <div
                 className="img-content2-2 mx-4"
                 data-aos="fade-up"
@@ -361,7 +363,7 @@ function App() {
             </div>
             {/* <!--  --> */}
             <div
-              className="col-md-6 d-flex flex-column justify-content-center align-items-center"
+              className="col-md-7 d-flex flex-column justify-content-center align-items-center"
               data-aos="fade-up"
               data-aos-duration="1000"
             >
@@ -369,7 +371,7 @@ function App() {
                 <h3 className="playball display-3 mt-3 ">Mapandes</h3>
                 <h3 className="alexbrush fw-bold">Upacara Potong Gigi</h3>
                 <p className="montserrat fw-bold my-3">
-                  I Gusti Agung Ayu Ratih Mahyuni
+                  I Gusti Agung Ngurah Wighnastana Prayoga
                 </p>
                 <p className="montserrat fw-bold my-3">
                   I Gusti Agung Ayu Ratih Mahyuni
@@ -423,7 +425,7 @@ function App() {
                     </div>
                     <div className="d-flex">
                       <div className="w-custom1">Waktu : </div>
-                      <div className="w-custom2"> -- : -- Wita</div>
+                      <div className="w-custom2"> 11 : 00 Wita - Selesai</div>
                     </div>
                     <div className="d-flex">
                       <div className="w-custom1">Tempat : </div>
