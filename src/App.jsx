@@ -8,6 +8,7 @@ import Comentar from "./components/comentar";
 import imgBg1 from "./assets/img/g1.jpg";
 import imgBg2 from "./assets/img/g2.jpg";
 import imgBg3 from "./assets/img/g3.jpg";
+import music from "./assets/music/music.mp3";
 
 function App() {
   const [comments, setComments] = useState([]);
@@ -35,9 +36,9 @@ function App() {
   };
 
   const audio = () => {
-    let audio = document.getElementsByTagName("audio")[0];
+    let audio = document.getElementById("audio");
     let icon = document.querySelector(".audio-control i");
-    if (audio.classList != "play") {
+    if (!audio.classList.contains("play")) {
       audio.play();
       audio.classList.add("play");
       icon.classList.remove("fa-music");
@@ -50,9 +51,10 @@ function App() {
     }
   };
 
-  const timer = (date) => {
+  const timer = (dateString) => {
     // target day
-    let timeTarget = new Date(date).getTime();
+    let timeTarget = new Date(dateString).getTime();
+
     // looping
     let thisInterval = setInterval(function () {
       // today
@@ -64,25 +66,25 @@ function App() {
         // stop Interval
         clearInterval(thisInterval);
       } else {
-        // // inner in html and change time in :
-        // 1.days
+        // inner in html and change time in :
+        // 1. days
         document.querySelector(".days").innerHTML = Math.floor(
           timeDistance / (1000 * 60 * 60 * 24)
         );
-        // 2.hours
+        // 2. hours
         document.querySelector(".hours").innerHTML = Math.floor(
           (timeDistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
         );
-        // 3.minutes
+        // 3. minutes
         document.querySelector(".minutes").innerHTML = Math.floor(
           (timeDistance % (1000 * 60 * 60)) / (1000 * 60)
         );
-        // 4.seconds
+        // 4. seconds
         document.querySelector(".seconds").innerHTML = Math.floor(
           (timeDistance % (1000 * 60)) / 1000
         );
       }
-    }, 100);
+    }, 1000);
   };
 
   const dateNow = () => {
@@ -123,7 +125,7 @@ function App() {
   useEffect(() => {
     Aos.init();
     // atur waktu, format ('tahun,bulan,hari')
-    timer("2024,06,21");
+    timer("2024-06-21T00:00:00Z");
     //
     getVisitor();
   });
@@ -172,7 +174,7 @@ function App() {
             <h3 className="montserrat">{visitor}</h3>
             <p className=" mx-4">
               Tanpa Mengurangi rasa hormat, kami mengundang anda untuk hadir
-              pada acara pernikahan kami.
+              pada acara metatah (potong gigi) kami.
             </p>
             {/* <!-- timer --> */}
             <div
@@ -226,19 +228,14 @@ function App() {
 
       {/* <!-- audio --> */}
       <div className="fixed-bottom audio shadow">
-        <audio
-          src="src/assets/music/BALI_WORLD_MUSIC_GUS_TEJA_FEE_WITH_LOVE.mp3"
-          id="audio"
-          loop
-          className="play hidden"
-        ></audio>
-        {/* <button
+        <audio src={music} id="audio" loop className="play hidden"></audio>
+        <button
           onClick={audio}
           type="button"
           className="audio-button audio-control m-2 d-flex justify-content-center align-items-center"
         >
           <i className="fas fa-volume-mute"></i>
-        </button> */}
+        </button>
       </div>
 
       {/* <!-- body --> */}
