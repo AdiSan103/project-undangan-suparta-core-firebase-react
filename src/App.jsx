@@ -325,10 +325,10 @@ function App() {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <p className="p-content3 text-center nunitosans mb-5 ">
+              {/* <p className="p-content3 text-center nunitosans mb-5 ">
                 Merupakan suatu kehormatan dan kebahagiaan kami apabila
                 Bapak/Ibu/saudara/i berkenan hadir memberikan doa restu.
-              </p>
+              </p> */}
               <div className="content3-main text-center m-auto position-relative d-flex justify-content-center align-items-center  flex-column">
                 <div
                   className="content-3-desc d-flex justify-content-center align-items-center flex-column h-100 p-5"
@@ -579,6 +579,12 @@ function App() {
                     data-bs-target="#carouselExampleIndicators"
                     data-bs-slide-to="6"
                     aria-label="Slide 7"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="7"
+                    aria-label="Slide 8"
                   ></button>
                   <button
                     type="button"
