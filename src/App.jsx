@@ -307,90 +307,15 @@ function App() {
         </div>
 
         {/* <!-- content1 --> */}
-        <div className="content1 container text-center d-flex flex-column justify-content-center align-items-center py-4">
+        {/* <div className="content1 container text-center d-flex flex-column justify-content-center align-items-center py-4">
           <div className="content1-content">
             <p className="numans" data-aos="fade-up" data-aos-duration="1000">
               {" "}
-              Hyang Widhi Wasa/Tuhan Yang Maha Esa kami bermaksud mengundang
-              Bapak/Ibu/Saudara/i pada Upacara Manusa Yadnya Mepandes ( Potong
-              Gigi ) Putra dan Putri kami.
+              Kami bermaksud mengundang Bapak/Ibu/Saudara/i pada Upacara Manusa
+              Yadnya Mepandes ( Potong Gigi ) Putra dan Putri kami.
             </p>
           </div>
-        </div>
-
-        {/* <!-- content2 --> */}
-        <div className="content2 container" style={{ overflow: "hidden" }}>
-          {/* <!-- pria --> */}
-          <div className="content2-1 d-flex flex-md-row flex-column-reverse py-2">
-            {/* <!--  --> */}
-            <div
-              className="col-md-7 d-flex flex-column justify-content-center align-items-center"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              <div>
-                <h3 className="alexbrush fw-bold">Jumat, 21 Juni 2024</h3>
-                <i className="nunitosans">Hari /Tanggal</i>
-                <p className="montserrat fw-bold my-3">
-                  11 : 00 Wita - Selesai
-                </p>
-                <p className="nunitosans">Waktu</p>
-                <i className="montserrat fw-bold my-3">
-                  Jl. Subita Gg Sudamala No. 7,
-                  <br />
-                  Br Abiankapas Kaja, Sumerta,Denpasar.
-                </i>
-                <p className="nunitosans mt-3">Tempat</p>
-              </div>
-            </div>
-            {/* <!--  --> */}
-            <div className="col-md-5 d-flex flex-column justify-content-center align-items-center position-relative">
-              <div className="position-absolute content2-1-border"></div>
-              <div
-                className="img-content2-1 mx-4"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              ></div>
-            </div>
-          </div>
-          {/* <!-- wanita --> */}
-          <div className=" content2-2 row py-2">
-            {/* <!--  --> */}
-            <div className="col-md-5 d-flex flex-column justify-content-center align-items-center position-relative">
-              <div
-                className="img-content2-2 mx-4"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              ></div>
-              <div className="position-absolute content2-2-border"></div>
-            </div>
-            {/* <!--  --> */}
-            <div
-              className="col-md-7 d-flex flex-column justify-content-center align-items-center"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              <div className="text-center">
-                <h3 className="playball display-3 mt-3 ">Mapandes</h3>
-                <h3 className="alexbrush fw-bold">Upacara Potong Gigi</h3>
-                <p className="montserrat fw-bold my-3 text-size1">
-                  I Gusti Agung Ngurah Wighnastana Prayoga
-                </p>
-                <p className="montserrat fw-bold my-3 text-size1">
-                  I Gusti Agung Ayu Ratih Mahyuni
-                </p>
-                <p className="montserrat fw-bold my-3 text-size1">
-                  I Gusti Agung Inten Kesaraningrat
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* <!-- content3 --> */}
-        <div className="content3 w-100 my-5">
-          <div className="content3-bg w-100 my-5"></div>
-        </div>
+        </div> */}
 
         {/* <!-- content4 --> */}
         <div className="content4">
@@ -417,9 +342,9 @@ function App() {
                     data-aos-duration="1000"
                   >
                     Atas Asung Kertha Wara Nugraha Ida Sang Hyang Widhi Wasa /
-                    Tuhan Yang Maha Esa, kami bermaksud menyelenggarakan Upacara
-                    Manusa Yadnya Mapandes ( Potong Gigi ) putra - putri kami,
-                    yang diselenggarakan pada
+                    Tuhan Yang Maha Esa, Kami bermaksud mengundang
+                    Bapak/Ibu/Saudara/i pada Upacara Manusa Yadnya Mepandes (
+                    Potong Gigi ) Putra dan Putri kami.
                   </p>
                   <div className="numans pb-4 pt-2 text-size1">
                     <div className="d-flex">
@@ -470,6 +395,80 @@ function App() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* <!-- content2 --> */}
+        <div className="content2 container" style={{ overflow: "hidden" }}>
+          {/* <!-- pria --> */}
+          <div className="content2-1 d-flex flex-md-row flex-column-reverse py-2">
+            {/* <!--  --> */}
+            {/* <div
+              className="col-md-7 d-flex flex-column justify-content-center align-items-center"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div>
+                <h3 className="alexbrush fw-bold">Jumat, 21 Juni 2024</h3>
+                <i className="nunitosans">Hari /Tanggal</i>
+                <p className="montserrat fw-bold my-3">
+                  11 : 00 Wita - Selesai
+                </p>
+                <p className="nunitosans">Waktu</p>
+                <i className="montserrat fw-bold my-3">
+                  Jl. Subita Gg Sudamala No. 7,
+                  <br />
+                  Br Abiankapas Kaja, Sumerta,Denpasar.
+                </i>
+                <p className="nunitosans mt-3">Tempat</p>
+              </div>
+            </div> */}
+            {/* <!--  --> */}
+            <div className="col-md-5 d-flex flex-column justify-content-center align-items-center position-relative">
+              <div className="position-absolute content2-1-border"></div>
+              <div
+                className="img-content2-1 mx-4"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              ></div>
+            </div>
+          </div>
+          {/* <!-- wanita --> */}
+          <div className=" content2-2 row py-2">
+            {/* <!--  --> */}
+            <div className="col-md-5 d-flex flex-column justify-content-center align-items-center position-relative">
+              <div
+                className="img-content2-2 mx-4"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              ></div>
+              <div className="position-absolute content2-2-border"></div>
+            </div>
+            {/* <!--  --> */}
+            <div
+              className="col-md-7 d-flex flex-column justify-content-center align-items-center"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div className="text-center">
+                <h3 className="playball display-3 mt-3 ">Mapandes</h3>
+                <h3 className="alexbrush fw-bold">Upacara Potong Gigi</h3>
+                <p className="montserrat fw-bold my-3 text-size1">
+                  I Gusti Agung Ngurah Wighnastana Prayoga
+                </p>
+                <p className="montserrat fw-bold my-3 text-size1">
+                  I Gusti Agung Ayu Ratih Mahyuni
+                </p>
+                <p className="montserrat fw-bold my-3 text-size1">
+                  I Gusti Agung Inten Kesaraningrat
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* <!-- content3 --> */}
+        <div className="content3 w-100 my-5">
+          <div className="content3-bg w-100 my-5"></div>
         </div>
 
         {/* <!-- content5 --> */}
