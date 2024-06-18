@@ -5,20 +5,21 @@ import { db } from "./service/firebase.js";
 import { collection, addDoc, query, onSnapshot } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import Comentar from "./components/comentar";
-import imgBg1 from "./assets/img/g1.jpg";
-import imgBg2 from "./assets/img/g2.jpg";
-import imgBg3 from "./assets/img/g3.jpg";
 
-import imgBg4 from "./assets/img/g4.jpg";
-import imgBg5 from "./assets/img/g5.jpg";
-import imgBg6 from "./assets/img/g6.jpg";
-import imgBg7 from "./assets/img/g7.jpg";
-import imgBg8 from "./assets/img/g8.jpg";
-import imgBg9 from "./assets/img/g9.jpg";
-import imgBg10 from "./assets/img/g10.jpg";
-import imgBg11 from "./assets/img/g11.jpg";
-import imgBg12 from "./assets/img/g12.jpg";
-import imgBg13 from "./assets/img/g13.jpg";
+import imgBg1 from "./assets/img/h1.jpg";
+import imgBg2 from "./assets/img/h2.jpg";
+import imgBg3 from "./assets/img/h3.jpg";
+import imgBg4 from "./assets/img/h4.jpg";
+import imgBg5 from "./assets/img/h5.jpg";
+import imgBg6 from "./assets/img/h6.jpg";
+import imgBg7 from "./assets/img/h7.jpg";
+import imgBg8 from "./assets/img/h8.jpg";
+import imgBg9 from "./assets/img/h9.jpg";
+import imgBg10 from "./assets/img/h10.jpg";
+import imgBg11 from "./assets/img/h11.jpg";
+import imgBg12 from "./assets/img/h12.jpg";
+import imgBg13 from "./assets/img/h13.jpg";
+import imgBg14 from "./assets/img/h14.jpg";
 
 import music from "./assets/music/music.mp3";
 
@@ -369,16 +370,16 @@ function App() {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <div>
+              <div className="text-center">
                 <h3 className="playball display-3 mt-3 ">Mapandes</h3>
                 <h3 className="alexbrush fw-bold">Upacara Potong Gigi</h3>
-                <p className="montserrat fw-bold my-3">
+                <p className="montserrat fw-bold my-3 text-size1">
                   I Gusti Agung Ngurah Wighnastana Prayoga
                 </p>
-                <p className="montserrat fw-bold my-3">
+                <p className="montserrat fw-bold my-3 text-size1">
                   I Gusti Agung Ayu Ratih Mahyuni
                 </p>
-                <p className="montserrat fw-bold my-3">
+                <p className="montserrat fw-bold my-3 text-size1">
                   I Gusti Agung Inten Kesaraningrat
                 </p>
               </div>
@@ -610,6 +611,12 @@ function App() {
                     data-bs-slide-to="12"
                     aria-label="Slide 13"
                   ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="13"
+                    aria-label="Slide 14"
+                  ></button>
                 </div>
                 <div className="carousel-inner">
                   <div className="carousel-item active">
@@ -650,6 +657,9 @@ function App() {
                   </div>
                   <div className="carousel-item">
                     <img src={imgBg13} className="d-block w-100" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img src={imgBg14} className="d-block w-100" alt="..." />
                   </div>
                 </div>
                 <button
