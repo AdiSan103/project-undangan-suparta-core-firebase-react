@@ -8,6 +8,18 @@ import Comentar from "./components/comentar";
 import imgBg1 from "./assets/img/g1.jpg";
 import imgBg2 from "./assets/img/g2.jpg";
 import imgBg3 from "./assets/img/g3.jpg";
+
+import imgBg4 from "./assets/img/g4.jpg";
+import imgBg5 from "./assets/img/g5.jpg";
+import imgBg6 from "./assets/img/g6.jpg";
+import imgBg7 from "./assets/img/g7.jpg";
+import imgBg8 from "./assets/img/g8.jpg";
+import imgBg9 from "./assets/img/g9.jpg";
+import imgBg10 from "./assets/img/g10.jpg";
+import imgBg11 from "./assets/img/g11.jpg";
+import imgBg12 from "./assets/img/g12.jpg";
+import imgBg13 from "./assets/img/g13.jpg";
+
 import music from "./assets/music/music.mp3";
 
 function App() {
@@ -261,7 +273,7 @@ function App() {
             <br />
             <div className="numans ">
               <p>Putra - Putri Pasangan :</p>
-              <div className="d-flex w-full gap-lg-5 gap-2">
+              <div className="d-flex w-full gap-lg-5 gap-2 ">
                 <div>
                   <span>I Gusti Ngurah Gede Eka Mahaputra, SH</span>
                   <br />
@@ -296,13 +308,6 @@ function App() {
         {/* <!-- content1 --> */}
         <div className="content1 container text-center d-flex flex-column justify-content-center align-items-center py-4">
           <div className="content1-content">
-            <h2
-              className="alexbrush display-2 color1"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              Om Swastiastu
-            </h2>
             <p className="numans" data-aos="fade-up" data-aos-duration="1000">
               {" "}
               Hyang Widhi Wasa/Tuhan Yang Maha Esa kami bermaksud mengundang
@@ -415,7 +420,7 @@ function App() {
                     Manusa Yadnya Mapandes ( Potong Gigi ) putra - putri kami,
                     yang diselenggarakan pada
                   </p>
-                  <div className="numans pb-4 pt-2">
+                  <div className="numans pb-4 pt-2 text-size1">
                     <div className="d-flex">
                       <div className="w-custom1">Hari /Tanggal : </div>
                       <div className="w-custom2"> Jumat, 21 Juni 2024</div>
@@ -453,10 +458,10 @@ function App() {
                     Om Shanti, Shanti, Shanti Om
                   </h2>
                   <div className="w-custom3 d-flex align-items-end justify-content-end">
-                    <div className="d-flex flex-column align-items-start justify-content-start">
+                    <div className="d-flex flex-column align-items-center justify-content-center text-size1">
                       <span>Hormat Kami,</span>
                       <span> Kel. I Gusti Ngurah Gede Eka Mahaputra, SH</span>
-                      <span> Kel. I Gusti Ngurah Ahil Jelada Putra, SE</span>
+                      <span> Kel. I Gusti Ngurah Alit Jelada Putra, SE</span>
                     </div>
                   </div>
                 </div>
@@ -550,6 +555,61 @@ function App() {
                     data-bs-slide-to="2"
                     aria-label="Slide 3"
                   ></button>
+
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="5"
+                    aria-label="Slide 6"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="6"
+                    aria-label="Slide 7"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="8"
+                    aria-label="Slide 9"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="9"
+                    aria-label="Slide 10"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="10"
+                    aria-label="Slide 11"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="11"
+                    aria-label="Slide 12"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="12"
+                    aria-label="Slide 13"
+                  ></button>
                 </div>
                 <div className="carousel-inner">
                   <div className="carousel-item active">
@@ -560,6 +620,36 @@ function App() {
                   </div>
                   <div className="carousel-item">
                     <img src={imgBg3} className="d-block w-100" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img src={imgBg4} className="d-block w-100" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img src={imgBg5} className="d-block w-100" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img src={imgBg6} className="d-block w-100" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img src={imgBg7} className="d-block w-100" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img src={imgBg8} className="d-block w-100" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img src={imgBg9} className="d-block w-100" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img src={imgBg10} className="d-block w-100" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img src={imgBg11} className="d-block w-100" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img src={imgBg12} className="d-block w-100" alt="..." />
+                  </div>
+                  <div className="carousel-item">
+                    <img src={imgBg13} className="d-block w-100" alt="..." />
                   </div>
                 </div>
                 <button
